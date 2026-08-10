@@ -631,10 +631,7 @@ form span {
     align-items: center;
     max-width: 32rem;
     padding: var(--spacing-2xl) var(--spacing-xl);
-    border: 0.15rem solid var(--gray-200);
-    border-radius: var(--radius-lg);
-    background-color: var(--gray-200);
-    box-shadow: var(--shadow-sm);
+    background-color: var(--white);
     text-align: center;
 }
 
@@ -642,13 +639,20 @@ form span {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--purple-200);
+    border-radius: var(--radius-full);
     margin-bottom: var(--spacing-md);
 }
 
-.success-icon img {
-    width: 100%;
-    max-width: 12rem;
-    height: auto;
+.success-icon img,
+.success-icon svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    animation: none;
+    filter: invert(24%) sepia(85%) saturate(3150%) hue-rotate(252deg) brightness(50%) contrast(100%);
 }
 
 .success-content h1 {
