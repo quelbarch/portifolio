@@ -245,6 +245,14 @@ function iniciarSwiper() {
   })
 }
 
+// Ajusta dinamicamente o campo _next do FormSubmit para sempre apontar
+// para o domínio/caminho onde a página está rodando de fato (local ou produção),
+// evitando o problema de redirecionamento cair em um domínio errado.
+const inputNext = document.querySelector('input[name="_next"]')
+if (inputNext) {
+	inputNext.value = window.location.origin + window.location.pathname.replace(/[^/]*$/, '') + 'success.html'
+}
+
 formulario.addEventListener('submit', function (event) {
 	event.preventDefault()
  
