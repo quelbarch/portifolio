@@ -125,7 +125,7 @@ O site será aberto no navegador e todas as alterações poderão ser visualizad
  
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
  
-🔗 https://github.com/quelbarch/portifolio.git
+🔗 quelbarch.github.io/portifolio/
  
 ------
  
